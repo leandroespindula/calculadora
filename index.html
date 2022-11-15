@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container__calculadora">
+        <h1>The best Math</h1>
+
+        <p id="subtitulo">Aqui iremos ver na pratica o desenvolvimento de uma calculadora</p>
+
+        <ol >
+            1.Digite o primeiro numero
+        </ol>
+        <input type="number" name="primeiro__numero" id="primeiro__numero" placeholder="Digite primeiro numero!">
+        <ol >
+            2.Digite o segundo numero
+        </ol>
+        <input type="number" name="segundo__numero" id="segundo__numero" placeholder="Digite segundo numero!">
+        
+        <ol id="selecionarOperacao">
+            3.Seleciona a operação desejada
+        </ol>
+
+        <div id="selecao">
+            <!-- O segundo valor estará selecionado inicialmente -->
+            <select id="seletor" name="mtm">
+                <option id="seletor" >+</option>
+                <option id="seletor" selected>-</option>
+                <option id="seletor" >/</option>
+                <option id="seletor">*</option>
+            </select>
+
+            <button onclick="realizarCalculo()">Ver Resultado</button>
+
+        </div>
+
+        <p>O resultado da operação é: <span id="resultado">Resultado aqui</span></p>
+
+    </div>
+    <script src="/calculadora.js"></script>
+</body>
+</html>
